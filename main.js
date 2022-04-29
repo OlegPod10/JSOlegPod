@@ -1,5 +1,5 @@
 
-// // Задание 1
+// Задание 1
 
 let firstName = prompt('Ввидете ваше имя');
 let lastName = prompt('Введите вашу фамилию');
@@ -16,18 +16,18 @@ if (firstName && lastName && nick) {
     alert("Noname");
 }
 
-// // Задание 2
+// Задание 2
 
 let numbers = prompt("Введите любое число: ");
-let sto = (numbers > 100) ? "больше ста" : "меньше ста";
+let oneHundred = (numbers > 100) ? "больше ста" : "меньше ста";
 let even = (numbers % 2 == 0 ) ? "чётеное число" : "нечётное число";
 let fraction = (numbers % 1 == 0) ? "не дробное" : "дробное число" ;
 let positive = (numbers > 0) ? "положительное число" : "отрицательное число" ;
-if (Number(numbers)) {
-     alert(`Введённое вами число: ${sto}, ${even}, ${fraction}, ${positive}`);
+if (+numbers) {
+     alert(`Введённое вами число: ${oneHundred}, ${even}, ${fraction}, ${positive}`);
   } else alert("Вы не ввели число!");
 
-// // Задание 3 (Переписать задание с прошлего без использование if, else)
+// Задание 3 (Переписать задание с прошлего без использование if, else)
 
 let userName = prompt('Введите имя');
 let userAge = prompt('Введите возраст');
